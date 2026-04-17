@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #111E38;
+  --color-gold: #D4A64A;
+  --color-navy-light: #1c2d52;
+  --color-offwhite: #F7F6F5;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-heading: var(--font-manrope), ui-sans-serif, system-ui;
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-offwhite font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-offwhite;
+  }
+}
+
+.bg-navy-gradient {
+  background: radial-gradient(circle at top left, #1c2d52 0%, #111E38 100%);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 20px rgba(212, 166, 74, 0.3);
+}
